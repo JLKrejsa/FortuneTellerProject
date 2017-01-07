@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\bin\Debug\JK_FortuneTeller.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\obj\Debug\JK_FortuneTeller.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\bin\Debug\JK_FortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\bin\Debug\JK_FortuneTeller.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\obj\Debug\JK_FortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JK_FortuneTeller\JK_FortuneTeller\obj\Debug\JK_FortuneTeller.pdb
