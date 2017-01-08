@@ -21,18 +21,29 @@ namespace JK_FortuneTeller
             string lastName = Console.ReadLine();
 
             Console.WriteLine("What is your age?");
-            int age = Console.ReadLine();
+            int age = int.Parse(Console.ReadLine());
 
             Console.WriteLine("What month were you born?");
-            int month = Console.ReadLine();
+            int month = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is your favority ROYGBIV color?");
-            Console.WriteLine("Type Help if you don't know what ROYGBIV is");
+            Console.WriteLine("What is your favorite ROYGBIV color?");
+            Console.WriteLine("Type Help for a definition of ROYGBIV");
 
+            string faveColor = Console.ReadLine();
+            bool help = true;
+            if (help)
+            {
+                Console.WriteLine("ROYGBIV stands for Red, Orange, Yellow, Green, Indigo, and Violet.");
+                Console.WriteLine("These are the colors of the rainbow");
 
+                Console.WriteLine("Of those choices, what is your favorite color?");
+                string faveColor2 = Console.ReadLine();
+            }
 
             //Console.WriteLine((name ) + (lastName));
 
+            Console.WriteLine("How many siblings do you have?");
+            int sibs = int.Parse(Console.ReadLine());
         }
     }
 }
