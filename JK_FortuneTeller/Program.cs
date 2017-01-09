@@ -26,7 +26,7 @@ namespace JK_FortuneTeller
             int age = int.Parse(Console.ReadLine());
             
             Console.WriteLine("What month were you born? Use numerical value.");
-            int month = int.Parse(Console.ReadLine());
+            
             
             Console.WriteLine("What is your favorite ROYGBIV color?");
             Console.WriteLine("Type Help for a definition of ROYGBIV");
@@ -40,7 +40,8 @@ namespace JK_FortuneTeller
             }
             
             Console.WriteLine("How many siblings do you have?");
-            int sibs = int.Parse(Console.ReadLine());
+            
+
             string retire;
 
                 if (age % 2 == 0)
@@ -52,7 +53,7 @@ namespace JK_FortuneTeller
                     retire = "40 years";
                 }
             
-
+                int month = int.Parse(Console.ReadLine());
                 float money;
                 if (month >= 1 && month <= 4)
                 {
@@ -74,6 +75,7 @@ namespace JK_FortuneTeller
 
             
             string toTravel;
+
             switch (answer)
             {
                 case "red":
@@ -98,7 +100,7 @@ namespace JK_FortuneTeller
                     toTravel = "a convertible";
                     break;
             }
-
+            int sibs = int.Parse(Console.ReadLine());
             string vacationHome;
             switch (sibs)
             {
@@ -121,8 +123,10 @@ namespace JK_FortuneTeller
                     vacationHome = "A mobile home in Kansas";
                     break;
             }
+
             Console.WriteLine("Your future...");
-            Console.WriteLine( name +  lastName + " " + " will retire in " + retire + " " + "with $" + money + " in the bank" + "with " + vacationHome +  " and a " + toTravel);
+            Console.WriteLine(string.Concat(name," ",lastName, " "," will retire in ",retire, " "," with $", money," ", "in the bank","with ", vacationHome, " and a ", toTravel));
+            
 
                     //end of code
             }
