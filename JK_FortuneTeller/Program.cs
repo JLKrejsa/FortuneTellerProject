@@ -26,8 +26,8 @@ namespace JK_FortuneTeller
             int age = int.Parse(Console.ReadLine());
             
             Console.WriteLine("What month were you born? Use numerical value.");
-            
-            
+            int month = int.Parse(Console.ReadLine());
+
             Console.WriteLine("What is your favorite ROYGBIV color?");
             Console.WriteLine("Type Help for a definition of ROYGBIV");
 
@@ -37,10 +37,11 @@ namespace JK_FortuneTeller
             {
                 Console.WriteLine("red, orange, yellow, green, blue, indigo, violet");
                 Console.WriteLine("What color do you choose?");
+                answer = Console.ReadLine();
             }
             
             Console.WriteLine("How many siblings do you have?");
-            
+            int sibs = int.Parse(Console.ReadLine());
 
             string retire;
 
@@ -53,7 +54,7 @@ namespace JK_FortuneTeller
                     retire = "40 years";
                 }
             
-                int month = int.Parse(Console.ReadLine());
+                
                 float money;
                 if (month >= 1 && month <= 4)
                 {
@@ -73,10 +74,10 @@ namespace JK_FortuneTeller
                     money= 0.0f;
                 }
 
-            
-            string toTravel;
 
-            switch (answer)
+
+            string toTravel= " ";
+            switch (answer.ToLower())
             {
                 case "red":
                     toTravel = "a Mustang";
@@ -100,7 +101,7 @@ namespace JK_FortuneTeller
                     toTravel = "a convertible";
                     break;
             }
-            int sibs = int.Parse(Console.ReadLine());
+            
             string vacationHome;
             switch (sibs)
             {
@@ -116,16 +117,16 @@ namespace JK_FortuneTeller
                 case 3:
                     vacationHome = "A beach house in Key West";
                     break;
-                case 4 - 100:
+                case 4 :
                     vacationHome = "A ranch in California";
                     break;
                 default:
                     vacationHome = "A mobile home in Kansas";
                     break;
             }
-
+            
             Console.WriteLine("Your future...");
-            Console.WriteLine(string.Concat(name," ",lastName, " "," will retire in ",retire, " "," with $", money," ", "in the bank","with ", vacationHome, " and a ", toTravel));
+            Console.WriteLine(string.Concat(name," ",lastName, " "," will retire in ",retire, " "," with $", money," ", " in the bank"," with ", vacationHome, " and ", toTravel));
             
 
                     //end of code
