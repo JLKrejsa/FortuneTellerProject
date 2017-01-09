@@ -41,91 +41,95 @@ namespace JK_FortuneTeller
             
             Console.WriteLine("How many siblings do you have?");
             int sibs = int.Parse(Console.ReadLine());
-        
-           
+            string retire;
+
                 if (age % 2 == 0)
                 {
-                    Console.WriteLine("You will retire in 20 years");
+                    retire = "20 years";
                 }
                 else
                 {
-                    Console.WriteLine("You will retire in 40 years");
+                    retire = "40 years";
                 }
+            
 
-                if (month == 1 - 4)
+                float money;
+                if (month >= 1 && month <= 4)
                 {
-                    Console.WriteLine("$4 million");
+                    money = 300000f;
                 }
-                else if (month == 5 - 8)
+                else if (month >= 5 &&  month <= 8)
                 {
-                    Console.WriteLine("$500,000");
+                    money = 400000f;
                 }
-                else if (month == 9 - 12)
+                else if (month >=  9 && month <= 12)
                 {
-                    Console.WriteLine("$750,000");
+                    money = 500000f;
                 }
 
                 else
                 {
-                    Console.WriteLine("$0");
+                    money= 0.0f;
                 }
 
+            
+            string toTravel;
             switch (answer)
-
             {
                 case "red":
-                    Console.WriteLine("a Mustang");
+                    toTravel = "a Mustang";
                     break;
                 case "orange":
-                    Console.WriteLine("a Cruiser bike");
+                    toTravel = "a Cruiser bike";
                     break;
                 case "yellow":
-                    Console.WriteLine("a Subaru");
+                    toTravel = "a Subaru";
                     break;
                 case "green":
-                    Console.WriteLine("a Prius");
+                    toTravel = "a Prius";
                     break;
                 case "blue":
-                    Console.WriteLine("a yacht");
+                    toTravel = "a yacht";
                     break;
                 case "indigo":
-                    Console.WriteLine("a private jet");
+                    toTravel = "a private jet";
                     break;
                 case "violet":
-                    Console.WriteLine("a convertible");
+                    toTravel = "a convertible";
                     break;
             }
 
+            string vacationHome;
             switch (sibs)
             {
                 case 0:
-                    Console.WriteLine("A cabin in the Smoky Mountains");
+                    vacationHome ="A cabin in the Smoky Mountains";
                     break;
                 case 1:
-                    Console.WriteLine("A beach house at Venice Beach");
+                    vacationHome = "A beach house at Venice Beach";
                     break;
                 case 2:
-                    Console.WriteLine("A boat house in Seattle");
+                    vacationHome = "A boat house in Seattle";
                     break;
                 case 3:
-                    Console.WriteLine("A beach house in Key West");
+                    vacationHome = "A beach house in Key West";
                     break;
                 case 4 - 100:
-                    Console.WriteLine("A ranch in California");
+                    vacationHome = "A ranch in California";
                     break;
                 default:
-                    Console.WriteLine("A mobile home in Kansas");
+                    vacationHome = "A mobile home in Kansas";
                     break;
             }
-
-            //Console.WriteLine("name" + "lastName" + "you will retire at " + "age" + "with" + "month" + "in the bank" + "sibs" = answer);
+            Console.WriteLine("Your future...");
+            Console.WriteLine( name +  lastName + " " + " will retire in " + retire + " " + "with $" + money + " in the bank" + "with " + vacationHome +  " and a " + toTravel);
 
                     //end of code
             }
      }
 }
-            
-            
+//   Console.WriteLine("\n\n" + firstName + " " + lastName + " will retire in " + retireYears + " with $" + moneyInBank + " in the bank,\na vacation home in " + vacationHome + ", and " + transport + "."); 
 
 
-          
+
+
